@@ -1,0 +1,18 @@
+x=[]
+n=int(input('enter n : '))
+for i in range(n):
+    p=input()
+    x.append(p)
+a=[]
+b=[]
+d=[]
+c=0
+for i in x:
+    if i not in a:
+        a.append(i)
+        b.append(x.count(i))
+        if x.count(i)!=1:
+            d.append(i)
+            c+=1
+print(x)
+print('count of duplicate elements in list = ' ,c)
